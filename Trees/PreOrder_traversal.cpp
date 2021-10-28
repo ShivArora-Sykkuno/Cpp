@@ -19,6 +19,6 @@ void PreOrder(node * root){
     if (root == NULL) return;
 
     cout<<root<<" ";
-    PreOder(root->left);
-    PreOder(root-> right);
+    PreOrder(root->left);
+    PreOrder(root-> right);
 }
