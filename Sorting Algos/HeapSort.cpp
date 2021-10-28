@@ -48,20 +48,25 @@ void MaxHeap(int *arr, int size){
 
 
 int main(){
-    int arr[] ={0, 10, 20, 30, 25, 5, 40, 35};
+    int n; cin>>n;
+    int arr[n];
+    arr[0] = 0;
+    for(int i=1; i<=n; i++){
+        cin>>arr[i];
+    }
 
-    MaxHeap(arr, 7);
-    for(int i=1; i<=7; i++){
+    MaxHeap(arr, n);
+    for(int i=1; i<=n; i++){
         cout<<arr[i]<<" ";
     }
     cout<<endl;
-    return 0;
 
 
      cout<<"Heap Sort"<<endl;
-    for(int i=7; i>1; i--){
+    for(int i=n; i>1; i--){
         cout<<Delete(arr, i)<<" ";
     }
     cout<<endl;
+    return 0;
 
 }
